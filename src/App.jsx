@@ -4,14 +4,6 @@ import './App.css';
 
 const API_KEY="http://www.omdbapi.com/?i=tt3896198&apikey=3d49160e"
 
-// const movie =  {
-//     "Title": "Batman v Superman: Dawn of Justice",
-//     "Year": "2016",
-//     "imdbID": "tt2975590",
-//     "Type": "movie",
-//     "Poster": "https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-// }
-
 function App() {
 
   const [movies, setMovies] = useState([]);
@@ -24,7 +16,7 @@ function App() {
      setMovies(data.Search)
   }
    useEffect(() => {
-    Searchmovies('batman')
+    Searchmovies('dragon ball z')
    }, [])
   return (
     <>
